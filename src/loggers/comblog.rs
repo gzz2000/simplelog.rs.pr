@@ -30,8 +30,8 @@ impl CombinedLogger {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # use std::fs::File;
     /// # fn main() {
     /// let _ = CombinedLogger::init(
@@ -61,8 +61,8 @@ impl CombinedLogger {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # use std::fs::File;
     /// # fn main() {
     /// let combined_logger = CombinedLogger::new(

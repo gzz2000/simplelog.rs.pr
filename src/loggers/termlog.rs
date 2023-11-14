@@ -52,8 +52,8 @@ impl TermLogger {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # fn main() {
     ///     TermLogger::init(
     ///         LevelFilter::Info,
@@ -86,8 +86,8 @@ impl TermLogger {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # fn main() {
     /// let term_logger = TermLogger::new(
     ///     LevelFilter::Info,

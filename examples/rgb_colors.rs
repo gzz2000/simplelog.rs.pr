@@ -1,7 +1,7 @@
 #[cfg(all(not(target_family = "windows"), feature = "termcolor"))]
 use log::*;
 #[cfg(all(not(target_family = "windows"), feature = "termcolor"))]
-use simplelog::*;
+use simplelog_pr::*;
 
 #[cfg(all(not(target_family = "windows"), feature = "termcolor"))]
 fn main() {

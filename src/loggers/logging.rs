@@ -1,6 +1,6 @@
 use crate::config::{TargetPadding, TimeFormat};
 use crate::{Config, LevelPadding, ThreadLogMode, ThreadPadding};
-use log::{LevelFilter, Record};
+use log::{LevelFilter, Record, Level};
 use std::io::{Error, Write};
 use std::thread;
 #[cfg(all(feature = "termcolor", feature = "ansi_term"))]
@@ -108,10 +108,14 @@ where
         None => None,
     };
 
+    let level_str = match record.level() {
+        Level::Warn => "WARNING".into(),
+        level @ _ => format!("{}", level)
+    };
     let level = match config.level_padding {
-        LevelPadding::Left => format!("[{: >5}]", record.level()),
-        LevelPadding::Right => format!("[{: <5}]", record.level()),
-        LevelPadding::Off => format!("[{}]", record.level()),
+        LevelPadding::Left => format!("[{: >7}]", level_str),
+        LevelPadding::Right => format!("[{: <7}]", level_str),
+        LevelPadding::Off => format!("[{}]", level_str),
     };
 
     #[cfg(all(feature = "termcolor", feature = "ansi_term"))]

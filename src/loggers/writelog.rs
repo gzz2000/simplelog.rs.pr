@@ -28,8 +28,8 @@ impl<W: Write + Send + 'static> WriteLogger<W> {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # use std::fs::File;
     /// # fn main() {
     /// let _ = WriteLogger::init(LevelFilter::Info, Config::default(), File::create("my_rust_bin.log").unwrap());
@@ -49,8 +49,8 @@ impl<W: Write + Send + 'static> WriteLogger<W> {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # use std::fs::File;
     /// # fn main() {
     /// let file_logger = WriteLogger::new(LevelFilter::Info, Config::default(), File::create("my_rust_bin.log").unwrap());

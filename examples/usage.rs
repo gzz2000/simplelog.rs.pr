@@ -1,5 +1,5 @@
 use log::*;
-use simplelog::*;
+use simplelog_pr::*;
 
 use std::fs::File;
 

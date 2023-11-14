@@ -1,7 +1,7 @@
 #[cfg(feature = "termcolor")]
 use log::*;
 #[cfg(feature = "termcolor")]
-use simplelog::*;
+use simplelog_pr::*;
 
 #[cfg(feature = "termcolor")]
 fn main() {

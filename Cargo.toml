@@ -1,12 +1,10 @@
 [package]
-name = "simplelog"
+name = "simplelog_pr"
 version = "0.12.0"
 edition = "2018"
-authors = ["Drakulix <github@drakulix.de>"]
-description = "A simple and easy-to-use logging facility for Rust's log crate"
-documentation = "https://docs.rs/simplelog/"
-repository = "https://github.com/drakulix/simplelog.rs"
-readme = "README.md"
+authors = ["Drakulix <github@drakulix.de>", "Zizheng Guo <gzz_2000@126.com>"]
+description = "A simple and easy-to-use logging facility for Rust's log crate, designed for same flavor as PKU EDA PR."
+repository = "https://github.com/gzz2000/simplelog.rs.pr"
 keywords = ["log", "simplelog", "filelog", "logging"]
 license = "MIT OR Apache-2.0"
 include = [

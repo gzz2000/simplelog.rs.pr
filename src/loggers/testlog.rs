@@ -27,8 +27,8 @@ impl TestLogger {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # fn main() {
     /// #[cfg(not(test))]
     /// // another logger
@@ -51,8 +51,8 @@ impl TestLogger {
     ///
     /// # Examples
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # fn main() {
     /// #[cfg(not(test))]
     /// // another logger

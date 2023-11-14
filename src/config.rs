@@ -202,7 +202,7 @@ impl ConfigBuilder {
     /// # Usage
     ///
     /// ```
-    /// # use simplelog::{ConfigBuilder, format_description};
+    /// # use simplelog_pr::{ConfigBuilder, format_description};
     /// let config = ConfigBuilder::new()
     ///     .set_time_format_custom(format_description!("[hour]:[minute]:[second].[subsecond]"))
     ///     .build();

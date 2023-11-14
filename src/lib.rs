@@ -59,8 +59,8 @@ pub trait SharedLogger: Log {
     /// # Examples
     ///
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # fn main() {
     /// let logger = SimpleLogger::new(LevelFilter::Info, Config::default());
     /// println!("{}", logger.level());
@@ -75,8 +75,8 @@ pub trait SharedLogger: Log {
     /// # Examples
     ///
     /// ```
-    /// # extern crate simplelog;
-    /// # use simplelog::*;
+    /// # extern crate simplelog_pr;
+    /// # use simplelog_pr::*;
     /// # fn main() {
     /// let logger = SimpleLogger::new(LevelFilter::Info, Config::default());
     /// println!("{:?}", logger.config());
